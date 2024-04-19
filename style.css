@@ -1,0 +1,68 @@
+/* =================================================== google fonts =================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+:root {
+  --red-color: #ff385c;
+  --black-color: #222222;
+  --white-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+.projectdetails-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  margin: 10px 0;
+  color: var(--black-color);
+}
+
+.headline {
+  font-weight: normal;
+}
+
+.project-description {
+  font-weight: 500;
+}
+
+.toastnotifications-btncontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toast-notification-btn {
+  background: transparent;
+  padding: 15px 20px;
+  color: var(--red-color);
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#toastnotification-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  right: 15px;
+  top: 10px;
+}
+
+.toastnotification {
+  background: var(--white-color);
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-bottom: 1px solid var(--black-color);
+}
