@@ -1,3 +1,4 @@
+const notification_audio = new Audio("notification_song.mp3");
 const toast_notification_btn = document.querySelector(".toast-notification-btn");
 const toastnotification_container = document.getElementById("toastnotification-container");
 const notification_messages = ["👤 user started following you","🖤 user liked your post","🤳 user mentioned you in their post","🙅‍♂️ user unfollowed you","💰 your post got viral","💬 user messaged you"];
@@ -7,9 +8,11 @@ function show_notifications(message = null) {
     toastnotification_element.classList.add("toastnotification");
     if(toastnotification_element.innerText = "") {
         toastnotification_element.innerText = message;
+        notification_audio.play();
     }
     else {
         toastnotification_element.innerText = print_random_message();
+        notification_audio.play();
     }
     toastnotification_container.appendChild(toastnotification_element);
     setTimeout(() => {
